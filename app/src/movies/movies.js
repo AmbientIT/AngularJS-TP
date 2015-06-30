@@ -11,7 +11,12 @@
                 controller: 'MoviesController as ctrl',
                 resolve: {
                     movieList: function (movieModel) {
-                        return movieModel.findAll();
+                        return movieModel.findAll().then(function (movies) {
+                            _.map(movies, function (movie) {
+                                movie.populateComments();
+                            });
+                            return movies;
+                        });
                     }
                 },
                 onEnter: function (userModel, $state) {

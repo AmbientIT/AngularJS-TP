@@ -23,12 +23,17 @@
 
             <p>
                 <span>Casting : </span>
-                <span>{{ ctrl.movie.actors}}</span>
+                <span>{{ ctrl.movie.actors }}</span>
             </p>
             <md-list class="comments-area" ng-if="ctrl.movie.comments.length > 0">
                 <h2>Commentaires</h2>
                 <md-list-item class="md-3-line" ng-repeat="comment in ctrl.movie.comments">
-                    <comment data="comment"></comment>
+                    <div layout="row">
+                        <comment data="comment"></comment>
+                        <md-button class="md-fab" style="text-align: center">
+                            X
+                        </md-button>
+                    </div>
                 </md-list-item>
             </md-list>
         </md-card-content>

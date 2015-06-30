@@ -30,7 +30,10 @@
                 <md-list-item class="md-3-line" ng-repeat="comment in ctrl.movie.comments">
                     <div layout="row">
                         <comment data="comment"></comment>
-                        <md-button class="md-fab" style="text-align: center">
+                        <md-button ng-click="ctrl.movie.removeComment(comment)"
+                                   ng-if="ctrl.userModel.loggedUser.id === comment.author"
+                                   class="md-fab"
+                                   style="text-align: center">
                             X
                         </md-button>
                     </div>

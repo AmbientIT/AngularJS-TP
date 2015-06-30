@@ -47,6 +47,12 @@
                 return commentModel.create(comment).then(function (savedComment) {
                     movie.comments.push(savedComment);
                 });
+            },
+            removeComment: function (comment) {
+                var movie = this;
+                return commentModel.delete(comment.id).then(function () {
+                    _.remove(movie.comments, comment);
+                });
             }
         };
 

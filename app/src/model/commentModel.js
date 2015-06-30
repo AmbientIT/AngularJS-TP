@@ -17,6 +17,10 @@
                 });
             };
 
+            commentModel.delete = function (id) {
+                return $http.delete(URI + '/' + id);
+            };
+
             function extractComment(response) {
                 return asComment(response.data);
             }

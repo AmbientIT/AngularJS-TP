@@ -4,10 +4,11 @@
 
         .controller('MovieDetailController', MovieDetailController);
 
-    function MovieDetailController(movie, addCommentDialog) {
+    function MovieDetailController(movie, userModel, addCommentDialog) {
         var ctrl = this;
 
         ctrl.movie = movie;
+        ctrl.userModel = userModel;
 
         ctrl.addCommentDialog = addCommentDialog;
     }

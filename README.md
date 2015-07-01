@@ -12,7 +12,7 @@ Dans un terminal
 
 * $ sudo npm i live-server -g
 * $ sudo npm i json-server -g
-* $ sudo npm i gulp-server -g
+* $ sudo npm i gulp -g
 
 
 ### Installation

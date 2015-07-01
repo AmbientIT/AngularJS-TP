@@ -6,10 +6,12 @@ Vous trouverez dans ce repository le TP utilisé durant la formation AngularJS.
 
 * Git
 * Node.js et npm
+* Bower
 * live-server, json-server et gulp
 
 Dans un terminal
 
+* $ sudo npm i bower -g
 * $ sudo npm i live-server -g
 * $ sudo npm i json-server -g
 * $ sudo npm i gulp -g

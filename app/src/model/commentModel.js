@@ -13,12 +13,6 @@
                 });
             };
 
-            commentModel.findByMovie = function (movieId) {
-                return $http.post(URI + '/movie?' + movieId).then(function (response) {
-                    return response.data;
-                });
-            }
-
         });
 
 })();

@@ -3,7 +3,7 @@
 1. Créer un service commentModel
 2. Y ajouter la méthode create() :
     * prend un objet en paramètre
-    * lance une requête HTTP POST
+    * lance une requête HTTP POST à http://localhost:3000/comments
     * retourne une promise
 3. Au submit du formulaire, appeler la méthode create()
 4. L'objet comment passé en argument doit posséder les attributs suivants :

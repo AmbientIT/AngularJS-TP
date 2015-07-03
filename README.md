@@ -11,4 +11,5 @@
     * content
     * movie : id du film commenté
     * author : id du user loggé
-5. Si l'utilisateur n'est pas loggé, il doit être redirigé vers le state users
+5. Au retour de la requête HTTP, fermer la boîte de dialogue
+6. Si l'utilisateur n'est pas loggé, il doit être redirigé vers le state users
